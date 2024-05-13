@@ -16,6 +16,7 @@ import { HiArrowRight, HiOutlineShoppingCart } from "react-icons/hi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineNavigateBefore, MdOutlineNavigateNext } from "react-icons/md";
 import { AiFillStar } from "react-icons/ai";
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const App = () => {
   const [currentSlide, setCurrentSlide] = useState(1);
@@ -324,6 +325,25 @@ const App = () => {
             </button>
           </div>
         </div>
+      </section>
+      {/* footer */}
+      <section className="bg-gray-100">
+        <footer className="flex flex-col sm:flex-row gap-4 justify-between px-12 py-6">
+          <div className="flex items-center justify-center">
+            <img src={logo} alt="logo" width={80} />
+            <h1 className="text-xl font-belleza font-bold">Planty'x</h1>
+          </div>
+          <div className="flex sm:flex-row font-QuickSand  flex-col items-center sm:gap-8 gap-4 justify-center border-b-2 border-[#000] sm:border-none">
+            <h1>Home</h1>
+            <h1>Contact us</h1>
+            <h1 className="mb-3 sm:mb-0">Terms & Conditions</h1>
+          </div>
+          <div className="flex items-center justify-evenly my-2 sm:my-0 sm:justify-center gap-4">
+            <FaFacebook size={28} />
+            <FaTwitter size={28} />
+            <FaInstagram size={28} />
+          </div>
+        </footer>
       </section>
     </main>
   );
