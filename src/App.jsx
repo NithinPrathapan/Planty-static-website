@@ -7,6 +7,9 @@ import card1 from "./assets/card1.jpeg";
 import card2 from "./assets/card2.jpeg";
 import card3 from "./assets/card3.jpeg";
 import card4 from "./assets/card4.jpeg";
+import pic1 from "./assets/pic1.jpeg";
+import pic2 from "./assets/pic2.jpeg";
+import pic3 from "./assets/pic3.jpeg";
 import { LuSearch } from "react-icons/lu";
 import { CgProfile } from "react-icons/cg";
 import { HiArrowRight, HiOutlineShoppingCart } from "react-icons/hi";
@@ -260,6 +263,65 @@ const App = () => {
           <div className="flex absolute flex-1 sm:right-2 sm:top-0 bottom-0 right-0 gap-4 justify-between">
             <MdOutlineNavigateBefore className=" cursor-pointer text-black text-xl   border-2 border-[#000] rounded-full " />
             <MdOutlineNavigateNext className=" cursor-pointer text-black text-xl  border-2 border-[#000] rounded-full " />
+          </div>
+        </div>
+      </section>
+      {/* photo gallery */}
+      <section className="sm:px-12 py-4 px-4">
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-6 ">
+          <img
+            className="w-[45%] object-cover max-h-[800px]"
+            src={pic1}
+            alt="null"
+          />
+          <img
+            className="w-[40%] object-contain max-h-[800px]"
+            src={pic2}
+            alt="null"
+          />
+          <div className="w-full relative">
+            <img
+              className="w-[100%] object-cover sm:max-h-[800px] max-h-[500px]"
+              src={pic3}
+              alt="null"
+            />
+            <div className="absolute sm:top-20 sm:left-20 top-4 left-4">
+              <h1 className="sm:text-5xl text-3xl font-belleza font-bold">
+                Get inspired from <br /> our Instagram
+              </h1>
+              <p className="sm:text-xl  font-semibold my-2">
+                If you use the hashtag #bioomey on Instagram,
+                <br />
+                well spotlight you.
+              </p>
+              <button className="flex items-center gap-2 text-xl font-belleza font-bold">
+                Check it out{" "}
+                <HiArrowRight
+                  className="bg-black rounded-full text-white"
+                  size={24}
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="sm:flex gap-12  justify-between py-12  items-center">
+          <div className="mx-auto">
+            <h1 className=" sm:text-4xl text-center sm:text-left text-xl font-belleza font-bold w-full">
+              Stay update with special offers, <br />
+              plant-parenting tips, and more.
+            </h1>
+          </div>
+          <div className="  w-[80%] sm:w-[40%] mx-auto  mt-6 relative">
+            <input
+              className="outline-none bg-transparent placeholder:font-QuickSand placeholder:text-black border-b-4 p-2  border-[#000] w-full   "
+              type="text"
+              placeholder="Your email"
+              name=""
+              id=""
+            />
+            <button className="absolute  bg-black text-white px-6 py-2 right-0 -top-2  rounded-full ">
+              Subscribe
+            </button>
           </div>
         </div>
       </section>
