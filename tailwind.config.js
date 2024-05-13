@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         belleza: "Belleza",
         QuickSand: "QuickSand",
+        Cabin: "Cabin",
       },
     },
   },
