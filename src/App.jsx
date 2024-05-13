@@ -3,11 +3,16 @@ import logo from "./assets/logo.png";
 import hero from "./assets/hero.jpeg";
 import banner from "./assets/banner.jpeg";
 import banner2 from "./assets/banner2.jpeg";
+import card1 from "./assets/card1.jpeg";
+import card2 from "./assets/card2.jpeg";
+import card3 from "./assets/card3.jpeg";
+import card4 from "./assets/card4.jpeg";
 import { LuSearch } from "react-icons/lu";
 import { CgProfile } from "react-icons/cg";
 import { HiArrowRight, HiOutlineShoppingCart } from "react-icons/hi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineNavigateBefore, MdOutlineNavigateNext } from "react-icons/md";
+import { AiFillStar } from "react-icons/ai";
 
 const App = () => {
   const [currentSlide, setCurrentSlide] = useState(1);
@@ -21,8 +26,8 @@ const App = () => {
   };
 
   return (
-    <main className="bg-gray-100 sm:px-12 px-4">
-      <section>
+    <main className=" ">
+      <section className="px-4 ">
         <nav className=" flex justify-between  py-4 font-QuickSand overflow-hidden">
           <div className="flex cursor-pointer  items-center">
             <img className="sm:w-[100px] w-[70px]" src={logo} alt="logo" />
@@ -51,7 +56,7 @@ const App = () => {
         </nav>
       </section>
       {/* HERO SECTION */}
-      <section className="py-4">
+      <section className="py-4 sm:px-12 px-4 ">
         <div className="flex justify-between">
           <div className="flex flex-col flex-1 w-[50%] sm:w-[100%] ">
             <h1 className="font-belleza sm:text-[90px] text-[30px]">
@@ -85,13 +90,13 @@ const App = () => {
         </div>
       </section>
       {/* learn more */}
-      <section className="py-4 justify-center flex flex-col gap-12  items-center">
-        <div className="sm:flex text-center items-center   gap-24 justify-evenly">
-          <h1 className="sm:w-[500px]  mx-auto  sm:text-xl text-md font-QuickSand my-2">
+      <section className="py-4 sm:px-12 px-4  justify-center flex flex-col gap-12  items-center">
+        <div className="sm:flex text-center items-center   sm:gap-24 gap-12 justify-evenly">
+          <h1 className="mx-auto  sm:text-xl text-md font-QuickSand my-2">
             Each houseplant set is handled quickly and safely before being sent
             to your destination in specially designed insulated packaging.
           </h1>
-          <h1 className="sm:w-[500px] sm:text-3xl text-xl mt-4  font-Cabin ">
+          <h1 className="sm:text-3xl text-xl mt-4  font-Cabin ">
             Learn how ve take care of your plant at every stage of its journey
             from our greenhouse to your home.
           </h1>
@@ -102,8 +107,8 @@ const App = () => {
         </h1>
       </section>
       {/* banner slider */}
-      <section className=" bg-gray-200">
-        <div className="m-auto ">
+      <section className="py-4 sm:px-12 px-4 ">
+        <div className="m-auto w-[90%]  ">
           <div id="1" className={currentSlide === 1 ? "" : "hidden"}>
             <img
               className="object-cover w-full h-[400px] sm:h-[800px]"
@@ -119,9 +124,9 @@ const App = () => {
             />
           </div>
         </div>
-        <div className="flex justify-between items-center   py-8 px-2">
+        <div className="flex justify-between items-center  py-8 px-2">
           <div>
-            <h1 className=" font-semibold sm:text-2xl text-xs w-[40px] ">
+            <h1 className=" font-semibold sm:text-2xl text-xs sm:w-full w-[40px] ">
               Step 1
             </h1>
           </div>
@@ -133,14 +138,128 @@ const App = () => {
           <div className="">
             <div className="flex sm:gap-20 gap-4 justify-between text-4x  ">
               <MdOutlineNavigateBefore
-                className=" text-black sm:text-6xl  text-2xl   border-2 border-[#000] rounded-full "
+                className=" cursor-pointer text-black sm:text-6xl  text-2xl   border-2 border-[#000] rounded-full "
                 onClick={prevSlide}
               />
               <MdOutlineNavigateNext
-                className=" text-black sm:text-6xl text-2xl   border-2 border-[#000] rounded-full "
+                className=" cursor-pointer text-black sm:text-6xl text-2xl   border-2 border-[#000] rounded-full "
                 onClick={nextSlide}
               />
             </div>
+          </div>
+        </div>
+      </section>
+      {/* our shop */}
+      <section className="py-4 sm:px-12 px-4 ">
+        <div className="flex flex-col gap-6">
+          <h1 className="uppercase font-semibold text-lg tracking-wider">
+            Our Shop
+          </h1>
+          <h1 className="text-5xl font-belleza font-bold">
+            Here are the best seller <br /> from our varieties
+          </h1>
+          <button className="bg-black rounded-full text-white py-2 sm:w-[150px] w-[100px] text-sm px-4 ">
+            See all
+          </button>
+        </div>
+        <div className="flex flex-wrap justify-center gap-6 ">
+          <div className="w-[300px]  mt-12 ">
+            <img
+              className="h-[400px] w-full object-cover"
+              src={card1}
+              alt="card"
+            />
+            <div className="flex justify-between  py-1">
+              <h1>Aloe Vera</h1>
+              <h1>$ 114.66</h1>
+            </div>
+          </div>
+          <div className="w-[300px] h-[400px]  mt-12 ">
+            <img
+              className="h-[400px] w-full object-cover "
+              src={card1}
+              alt="card"
+            />
+            <div className="flex justify-between  py-1">
+              <h1>Aloe Vera</h1>
+              <h1>$ 114.66</h1>
+            </div>
+          </div>
+          <div className="w-[300px] h-[400px]  mt-12 ">
+            <img
+              className="h-[400px] w-full object-cover "
+              src={card2}
+              alt="card"
+            />
+            <div className="flex justify-between  py-1">
+              <h1>Aloe Vera</h1>
+              <h1>$ 114.66</h1>
+            </div>
+          </div>
+          <div className="w-[300px] h-[400px]  mt-12 ">
+            <img
+              className="h-[400px] w-full object-cover "
+              src={card3}
+              alt="card"
+            />
+            <div className="flex justify-between  py-1">
+              <h1>Aloe Vera</h1>
+              <h1>$ 114.66</h1>
+            </div>
+          </div>
+          <div className="w-[300px] h-[400px]  mt-12 ">
+            <img
+              className="h-[400px] w-full object-cover "
+              src={card4}
+              alt="card"
+            />
+            <div className="flex justify-between  py-1">
+              <h1>Aloe Vera</h1>
+              <h1>$ 114.66</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* REVIEW SECTION */}
+      <section className="py-4 px-4 sm:px-12 ">
+        <div className="relative sm:grid-cols-2 grid gap-x-12  md:grid-cols-3">
+          <div className="flex sm:block flex-col flex-1 gap-4 justify-center sm:justify-start items-center my-6">
+            <h1 className="uppercase font-semibold sm:text-xl sm:mb-4 text-lg tracking-wider m-2  sm:m-0 sm:text-left  text-center">
+              reviews
+            </h1>
+            <h1 className="text-xs sm:text-lg text-center sm:mb-4 sm:text-left   ">
+              Shop with confidance by reading customer reviews given by
+              individuals who have used Bioomey. Excelient quality and
+              streamlined service are both offered here.
+            </h1>
+            <div className="flex gap-2 items-center sm:text-2xl">
+              <AiFillStar color="yellow " />
+              <AiFillStar color="yellow " />
+              <AiFillStar color="yellow " />
+              <AiFillStar color="yellow " />
+              <AiFillStar color="yellow " />
+              <span className="text-xs sm:text-lg font-bold font-belleza">
+                5/5
+              </span>
+            </div>
+          </div>
+          <div className="">
+            <h1 className="text-center  sm:text-2xl   my-6 sm:text-left font-belleza font-bold">
+              We adore all our friends atBloomey, especially the beauties who
+              have come to live with us! Great advice when needed, beautifully
+              and safely packaged. Highly recommend, it's just the best place
+              for healthy plants and great value!
+            </h1>
+            <div className="flex justify-between items-center mt-4">
+              <div>
+                <h1 className="font-semibold">Pamela S.</h1>
+                <p className="text-sm font-thin">Lake forest, CA</p>
+              </div>
+            </div>
+          </div>
+          <div className="flex absolute flex-1 sm:right-2 sm:top-0 bottom-0 right-0 gap-4 justify-between">
+            <MdOutlineNavigateBefore className=" cursor-pointer text-black text-xl   border-2 border-[#000] rounded-full " />
+            <MdOutlineNavigateNext className=" cursor-pointer text-black text-xl  border-2 border-[#000] rounded-full " />
           </div>
         </div>
       </section>
