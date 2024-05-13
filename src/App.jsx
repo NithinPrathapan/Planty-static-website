@@ -31,8 +31,8 @@ const App = () => {
 
   return (
     <main className=" ">
-      <section className="px-4 ">
-        <nav className=" flex justify-between  py-4 font-QuickSand overflow-hidden">
+      <section className=" ">
+        <nav className=" flex px-4 justify-between bg-gray-100  py-4 font-QuickSand overflow-hidden">
           <div className="flex cursor-pointer  items-center">
             <img className="sm:w-[100px] w-[70px]" src={logo} alt="logo" />
             <h1 className="sm:text-2xl font-bold">Planty'x</h1>
