@@ -55,7 +55,7 @@ const App = () => {
             <LuSearch className="cursor-pointer" size={28} />
             <CgProfile className="cursor-pointer" size={28} />
             <HiOutlineShoppingCart className="cursor-pointer" size={28} />
-            <GiHamburgerMenu className="cursor-pointer" size={28} />
+            <GiHamburgerMenu className="cursor-pointer md:hidden " size={28} />
           </div>
         </nav>
       </section>
