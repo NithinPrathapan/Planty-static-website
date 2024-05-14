@@ -19,6 +19,7 @@ import { AiFillStar } from "react-icons/ai";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const App = () => {
+  const [showMenu, setShowMenu] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(1);
 
   const nextSlide = () => {
@@ -55,9 +56,31 @@ const App = () => {
             <LuSearch className="cursor-pointer" size={28} />
             <CgProfile className="cursor-pointer" size={28} />
             <HiOutlineShoppingCart className="cursor-pointer" size={28} />
-            <GiHamburgerMenu className="cursor-pointer md:hidden " size={28} />
+            <GiHamburgerMenu
+              onClick={() => {
+                setShowMenu(!showMenu);
+              }}
+              className="cursor-pointer md:hidden "
+              size={28}
+            />
           </div>
         </nav>
+        {showMenu && (
+          <div className=" md:hidden transition-all py-4 duration-200 text-center flex flex-col gap-4">
+            <h1 className="cursor-pointer  py-2 hover:font-bold font-belleza duration-300 transition-all m-0 h-full w-[60%] text-center mx-auto  ">
+              Plants
+            </h1>
+            <h1 className="cursor-pointer  py-2 hover:font-bold font-belleza duration-300 transition-all m-0 h-full w-[60%] text-center mx-auto  ">
+              For Offices
+            </h1>
+            <h1 className="cursor-pointer  py-2 hover:font-bold font-belleza duration-300 transition-all m-0 h-full w-[60%] text-center mx-auto ">
+              Plants Care
+            </h1>
+            <h1 className="cursor-pointer  py-2 hover:font-bold font-belleza duration-300 transition-all m-0 h-full w-[60%] text-center mx-auto ">
+              About
+            </h1>
+          </div>
+        )}
       </section>
       {/* HERO SECTION */}
       <section className="py-4 sm:px-12 px-4 ">
