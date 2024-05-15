@@ -83,13 +83,13 @@ const App = () => {
         )}
       </section>
       {/* HERO SECTION */}
-      <section className="py-4 sm:px-12 px-4 ">
-        <div className="flex justify-between">
-          <div className="flex flex-col flex-1 w-[50%] sm:w-[100%] ">
+      <section className=" sm:pl-12 pl-4 ">
+        <div className="grid grid-cols-2  max-h-screen ">
+          <div className="max-h-[100%] ">
             <h1 className="font-belleza sm:text-[90px] text-[30px]">
               Best house <br /> Plants varieties
             </h1>
-            <button className="bg-black rounded-full text-white py-2 sm:w-[150px] w-[100px] text-sm px-4 ">
+            <button className="rounded-full text-white py-2 sm:w-[150px] w-[70%] sm:text-lg text-xs px-4 ">
               Shop Now
             </button>
             <h1 className="sm:mt-16 mt-4 sm:text-2xl  font-Cabin tracking-wider font-bold">
@@ -107,12 +107,8 @@ const App = () => {
               </h1>
             </div>
           </div>
-          <div className="flex-1 flex w-full max-h-[700px] justify-end ">
-            <img
-              className="object-contain sm:w-[100%] max-h-[90%] "
-              src={hero}
-              alt="hero"
-            />
+          <div className=" w-full  max-h-screen  ">
+            <img className="object-cover max-h-screen float-right  " src={hero} alt="hero" />
           </div>
         </div>
       </section>
