@@ -66,7 +66,7 @@ const App = () => {
           </div>
         </nav>
         {showMenu && (
-          <div className=" md:hidden transition-all py-4 duration-200 text-center flex flex-col gap-4">
+          <div className=" md:hidden transition-all text-xl py-4 duration-200 text-center flex flex-col gap-4">
             <h1 className="cursor-pointer  py-2 hover:font-bold font-belleza duration-300 transition-all m-0 h-full w-[60%] text-center mx-auto  ">
               Plants
             </h1>
